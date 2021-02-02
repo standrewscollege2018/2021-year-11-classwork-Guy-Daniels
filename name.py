@@ -3,8 +3,8 @@
 
 name = input("what is your name?")
 
-print("Hello", name ," how are you?")
+print("Hello", name ,)
 
 age = input("how old are you?")
 
-print("Hello", name ," and you are" age )
+print("Hello", name ,"you are", age ,)

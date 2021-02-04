@@ -3,7 +3,7 @@
 age = int(input("age: "))
 student = int(input("type 1 if you are a student, 2 if you are not: "))
 
-if age >= 13 and student = 1:
+if age >= 13 and student == 1:
     print("$8")
 else:
     if age >= 18:

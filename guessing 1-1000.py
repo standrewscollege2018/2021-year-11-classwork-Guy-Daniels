@@ -1,4 +1,4 @@
-# this program will make you guess a random number between 1 and 1000
+# this program will get you to guess a random number between 1 and 1000
 
 import random
 HIGH_SCORE = 1000000
@@ -9,15 +9,20 @@ while keep_playing == True:
     keep_guessing = True
     while keep_guessing == True:
         score += 1
-
-        check_number = True:
+        # This part checks to make sure we are getting an integer
+        check_number = True
+        while check_number == True:
             try:
-                guess = int(input("Pick a number between 1-1000"))
-                check_number = false
+                number = int(input("Pick a number between 1-1000: "))
+                check_number = False
             except:
                 print("Please print an integer")
+
+
         if number <= 0 or number >= 1001:
             print("invalid")
+
+# this part prints out either lower, higher or within 5
         else:
             if number == CORRECT_NUMBER:
                 keep_guessing = False
@@ -27,7 +32,6 @@ while keep_playing == True:
                 print("Lower")
             elif number < CORRECT_NUMBER:
                 print("Higher")
-            # printing out either lower, higher or within 5
 
             if number == CORRECT_NUMBER:
                 keep_guessing = False
@@ -37,7 +41,7 @@ while keep_playing == True:
     if score < HIGH_SCORE:
         print("New high score is", score ,"!")
         HIGH_SCORE = score
-    #
+    # this sets the high score
 
 
     play_again = input("Play again y/n: ")
@@ -48,3 +52,5 @@ while keep_playing == True:
     else:
         keep_playing = False
         print("invalid answer")
+
+print("Game finished")

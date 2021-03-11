@@ -5,7 +5,7 @@ prize = input("What is the prize: ")
 reserve_asking = True
 while reserve_asking == True:
     try:
-        reserve = int(input("What is the reserve price: $"))
+        reserve = float(input("What is the reserve price: $"))
         reserve_asking = False
     except:
         print("Invalid answer")
@@ -20,7 +20,7 @@ while keep_asking == True:
     new_name = input("Name: ")
     while bid_asking == True:
         try:
-            new_bid = int(input("Bid:"))
+            new_bid = float(input("Bid:"))
             bid_asking = False
         except:
             print("Invalid answer")
